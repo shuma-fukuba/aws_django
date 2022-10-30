@@ -4,4 +4,6 @@ from django.db import models
 class Stock(models.Model):
     name = models.CharField(max_length=32)
     amount = models.IntegerField()
-    price = models.IntegerField()
+
+class Sale(models.Model):
+    sale = models.IntegerField(default=0)
